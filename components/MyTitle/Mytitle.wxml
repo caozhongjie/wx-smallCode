@@ -1,0 +1,15 @@
+<!--components/MyTitle/Mytitle.wxml-->
+<view class="my_title">
+    <navigator class="logo">
+        <image class="logo_img"wid style="height: 60rpx;width: 140rpx" src="../../icon/logo.png"></image>
+    </navigator>
+    <view class="logo_search">
+        <image style="width: 60rpx;height: 44rpx" class="logo_img" src="../../icon/search.png"></image>
+    </view>
+    <view class="logo_user">
+        <image style="width: 54rpx;height: 60rpx" class="logo_img" src="../../icon/user.png"></image>
+    </view>
+    <view class="logo_download">
+       下载APP
+    </view>
+</view>

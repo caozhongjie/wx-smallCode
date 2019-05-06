@@ -1,0 +1,30 @@
+.my_title{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 7;
+}
+.logo_search{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_user{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_download{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    background: pink;
+    border-radius: 4rpx;
+    color: white;
+    padding: 10rpx;
+}

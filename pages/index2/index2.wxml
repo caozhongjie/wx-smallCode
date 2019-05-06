@@ -1,0 +1,46 @@
+<view>
+    <MyTitle></MyTitle>
+    <view>
+        <video src="{{videoInfo.videoSrc}}" controls style="width: 100%"></video>
+    </view>
+    <view>
+        <text>{{videoInfo.videoTitle}}</text>
+        <text>作者:{{videoInfo.author}}</text>
+        <text>播放量:{{videoInfo.playCount}}</text>
+        <text>评论量:{{videoInfo.commentCount}}</text>
+    </view>
+    <view>
+        <text>评论列表</text>
+        <view wx:for="{{ commentList }}" wx:key="{{ index }}">
+            <view style="border-bottom: 1rpx solid gray;padding: 10rpx">
+                <image src="{{ item.userIconSrc }}" style="width: 80rpx;height: 80rpx"></image>
+                <text>{{ item.username }}    评论时间:{{ item.commentDate }}</text>
+                <view>
+                    <text>{{ item.commentInfo }}</text>
+                </view>
+            </view>
+        </view>
+        <view>
+            <text>推荐视频</text>
+            <view class="img">
+                <navigator wx:for="{{ otherVideoList }}" wx:key="{{ index }}" >
+                    <view class="imgBox">
+                        <view class="content">
+                            <view class="imgDetail">
+                                <image src="{{ item.imgSrc }}" mode="widthFix" style="width: 355rpx;"></image>
+                            </view>
+                            <view class="count">
+                                <span>评论量:{{ item.commentCount }}</span><span> 播放了:{{ item.playMsg }}万</span>
+                            </view>
+                        </view>
+                        <view class="title">
+                            <text class="nameDetail">
+                                {{ item.title }}
+                            </text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

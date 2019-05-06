@@ -1,0 +1,60 @@
+.nav {
+    white-space: nowrap;
+}
+
+.navBar {
+    display: inline-block;
+    width: 120rpx;
+    height: 60rpx;
+    font-size: 28rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #666;
+}
+
+.active {
+    border-bottom: 5rpx solid red;
+}
+
+.swiper {
+    height: 220rpx;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30rpx;
+}
+
+.imgBox {
+    width: 375rpx;
+}
+.content{
+    position: relative;
+}
+.imgDetail {
+    width: 375rpx;
+    padding: 10rpx;
+    height: 190rpx;
+}
+.count{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20rpx;
+    font-size: 26rpx;
+    color: red;
+}
+.title{
+    width: 375rpx;
+    padding: 10rpx;
+}
+.nameDetail{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 26rpx;
+    color: #666666;
+}
